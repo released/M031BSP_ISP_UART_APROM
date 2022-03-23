@@ -21,21 +21,17 @@ update @ 2022/03/23
 		
 		- if two checksum result are different , will stuck in Boot loader , and wait for ISP tool hand shaking
 		
-![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/error_checksum_stay_in_boot_loader.jpg)
-		
+![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/error_checksum_stay_in_boot_loader.jpg)		
 		
 		- if two checksum result are the same , will jump to Application code
 
-![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/boot_from_LDROM_to_APROM.jpg)
-	
+![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/boot_from_LDROM_to_APROM.jpg)	
 
 		- under ISP tool , when upgrade finish 
 		
-![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/LDROM_upgrade_finish.jpg)
-			
+![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/LDROM_upgrade_finish.jpg)			
 
-		- if reset from application code , will entry timeout counting , jump to application code if not receive ISP tool command
-		
+		- if reset from application code , will entry timeout counting , jump to application code if not receive ISP tool command		
 	
 	- Application code project : AP
 	
@@ -62,7 +58,6 @@ update @ 2022/03/23
 ![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/APROM_KEIL_output_file.jpg)
 
 ![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/APROM_SRecord_cmd_file.jpg)
-
 		
 		- after project compile finish , binary size will be 120K (total application code size : 0x1E000)
 		
@@ -74,11 +69,9 @@ update @ 2022/03/23
 
 ![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/ISP_connect.jpg)
 
-
 		- if plan to use KEIL to programming flash with CRC , refer to below setting
 		
-![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/program_by_KEIL.jpg)
-	
+![image](https://github.com/released/M031BSP_ISP_UART_APROM/blob/main/program_by_KEIL.jpg)	
 		
 	- reserve data flash address : 0x1F800 , 2K
 	
